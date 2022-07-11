@@ -176,7 +176,8 @@ function animate() {
         enemy.isAttacking
     ) {
         enemy.isAttacking = false
-        console.log('enemy attack successful');
+        player.health -= 20
+        document.querySelector('#playerHealth').style.width = player.health + '%'
     }
 }
 
@@ -235,5 +236,7 @@ window.addEventListener('keyup', (event) => {
         case 'ArrowLeft':
             keys.ArrowLeft.pressed = false
             break
+        case 'ArrowDown':
+            enemy.isAttacking = false
     }
 })

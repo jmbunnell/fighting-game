@@ -22,7 +22,21 @@
             "
         >
             <!--Player Health-->
-            <div style="background-color: yellow; height: 30px; width: 100%"></div>
+            <div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+                <div style="background-color: yellow; height: 30px; width: 100%"></div>
+                <div 
+                    id="playerHealth"
+                    style="
+                        position: absolute; 
+                        background: blue; 
+                        top: 0; 
+                        right: 0; 
+                        bottom: 0; 
+                        width: 100%;
+                    "
+                ></div> 
+            </div>
+
             <!--Timer-->
             <div 
                 style="
@@ -32,9 +46,10 @@
                     flex-shrink: 0;
                 "
             ></div>
+
             <!--Enemy Health-->
             <div style="position: relative; height: 30px; width: 100%">
-                <div style="background-color: yellow; height: 30px;"></div>
+                <div style="background-color: yellow; height: 30px"></div>
                 <div 
                 id="enemyHealth"
                 style="
